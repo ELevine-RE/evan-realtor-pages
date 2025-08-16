@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evan Levine - Real Estate Professional</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #f2f1ee 0%, #99a78f 100%);
+            min-height: 100vh;
+            color: #223233;
+        }
+        
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        
+        .title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #223233;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: #63765b;
+            margin-bottom: 20px;
+        }
+        
+        .action-grid {
+            display: grid;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .action-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            text-decoration: none;
+            color: #223233;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .action-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .action-button.primary {
+            background: linear-gradient(135deg, #63765b 0%, #99a78f 100%);
+            color: white;
+        }
+        
+        .icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 12px;
+        }
+        
+        .contact-form {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+            color: #223233;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e1e5e9;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #63765b;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #63765b 0%, #99a78f 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .app-clip-notice {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+            border-left: 4px solid #e4c07f;
+        }
+        
+        .app-clip-notice h3 {
+            color: #63765b;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        
+        .app-clip-notice p {
+            color: #223233;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #63765b;
+            font-size: 14px;
+        }
+        
+        .footer a {
+            color: #63765b;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Evan Levine</h1>
+            <p class="subtitle">Real Estate Professional</p>
+            <p class="subtitle">Park City, Utah</p>
+        </div>
+        
+        <div class="app-clip-notice">
+            <h3>📱 iOS Users</h3>
+            <p>Tap the NFC chip on my business card for the full App Clip experience!</p>
+        </div>
+        
+        <div class="action-grid">
+            <a href="tel:+1-435-640-1234" class="action-button primary">
+                <span class="icon">📞</span>
+                Call Me
+            </a>
+            
+            <a href="sms:+1-435-640-1234" class="action-button">
+                <span class="icon">💬</span>
+                Text Me
+            </a>
+            
+            <a href="https://levine.realestate" class="action-button">
+                <span class="icon">🌐</span>
+                Visit Website
+            </a>
+            
+            <a href="mailto:evan@levine.realestate" class="action-button">
+                <span class="icon">✉️</span>
+                Email Me
+            </a>
+        </div>
+        
+        <div class="contact-form">
+            <h3 class="form-title">Get Property Updates</h3>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Your first name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Your last name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone (Optional)</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+                </div>
+                
+                <button type="submit" class="submit-btn">Get Updates</button>
+            </form>
+        </div>
+        
+        <div class="footer">
+            <p>Professional real estate services in the Park City area</p>
+            <p><a href="https://levine.realestate">levine.realestate</a></p>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const firstName = formData.get('firstName');
+            const lastName = formData.get('lastName');
+            const email = formData.get('email');
+            const phone = formData.get('phone');
+            
+            // Simple validation
+            if (!firstName && !lastName) {
+                alert('Please provide either a first name or last name');
+                return;
+            }
+            
+            if (!email && !phone) {
+                alert('Please provide either an email or phone number');
+                return;
+            }
+            
+            // Show success message
+            alert('Thank you! I\'ll be in touch soon with property updates.');
+            
+            // Reset form
+            this.reset();
+        });
+    </script>
+</body>
+</html>

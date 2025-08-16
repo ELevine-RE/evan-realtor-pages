@@ -1,0 +1,56 @@
+=== NFC BUSINESS CARD CONFIGURATION ===
+CRITICAL: DO NOT MODIFY WITHOUT VERIFICATION
+
+PROJECT: Evan Levine Real Estate App Clip
+TARGET: iOS App Clip (AppleLinkTreeClip)
+BUNDLE ID: realestate.levine.AppleLinkTreeClip
+FALLBACK URL: https://app.levine.realestate/android-fallback
+
+=== NFC TAG SPECIFICATIONS ===
+TAG TYPE: NTAG213/215/216 (Recommended: NTAG215)
+MEMORY: Minimum 144 bytes available
+FORMAT: NDEF (NFC Data Exchange Format)
+ENCODING: UTF-8
+
+=== NFC PAYLOAD STRUCTURE ===
+RECORD 1: App Clip Launch
+- Type: "application/vnd.apple.app-clip"
+- Payload: "realestate.levine.AppleLinkTreeClip"
+- Status: REQUIRED
+
+RECORD 2: Fallback URL (Android/Non-iOS)
+- Type: "text/plain"
+- Payload: "https://app.levine.realestate/android-fallback"
+- Status: REQUIRED
+
+RECORD 3: Business Card Info
+- Type: "text/vcard"
+- Payload: vCard format contact information
+- Status: OPTIONAL
+
+=== TECHNICAL REQUIREMENTS ===
+1. NFC Tag must support NDEF format
+2. Minimum 144 bytes available for payload
+3. Tag must be writable (not locked)
+4. Compatible with iPhone 7+ and Android NFC devices
+5. ISO14443 Type A compliance required
+
+=== TESTING REQUIREMENTS ===
+BEFORE PRODUCTION:
+1. Test with iPhone 7+ (iOS 14+)
+2. Test with Android device (NFC enabled)
+3. Verify App Clip launches on iOS
+4. Verify fallback URL opens on Android
+5. Test tag read distance (0-2 inches)
+
+=== CONTACT FOR VERIFICATION ===
+Developer: AI Assistant
+Project: Levine Real Estate App Clip
+Verification Required: YES
+
+=== IMPORTANT NOTES ===
+- DO NOT use locked NFC tags
+- DO NOT modify bundle identifier
+- Test thoroughly before mass production
+- Keep backup of configuration
+- Verify with actual devices before printing

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evan Levine - Real Estate Professional</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #f2f1ee 0%, #99a78f 100%);
+            min-height: 100vh;
+            color: #223233;
+        }
+        
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        
+        .title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #223233;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: #63765b;
+            margin-bottom: 20px;
+        }
+        
+        .action-grid {
+            display: grid;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .action-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            text-decoration: none;
+            color: #223233;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .action-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .action-button.primary {
+            background: linear-gradient(135deg, #63765b 0%, #99a78f 100%);
+            color: white;
+        }
+        
+        .icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 12px;
+        }
+        
+        .contact-form {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+            color: #223233;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #63765b;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #63765b 0%, #99a78f 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #63765b;
+            font-size: 14px;
+        }
+        
+        .multi-select {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .checkbox-group input[type="checkbox"] {
+            width: auto;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://via.placeholder.com/200x80/63765b/ffffff?text=ELR+Logo" alt="Evan Levine Real Estate" class="logo">
+            <h1 class="title">Evan Levine</h1>
+            <p class="subtitle">Real Estate Professional</p>
+        </div>
+        
+        <div class="action-grid">
+            <a href="tel:+1-455-555-0123" class="action-button">
+                <svg class="icon" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                </svg>
+                Call Me
+            </a>
+            
+            <a href="sms:+1-455-555-0123" class="action-button">
+                <svg class="icon" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"/>
+                    <path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"/>
+                </svg>
+                Text Me
+            </a>
+            
+            <a href="https://levine.realestate" class="action-button">
+                <svg class="icon" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 01-1.414-1.414l3-3a2 2 0 012.828 0zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414l-3 3a2 2 0 00-2.828 0 1 1 0 00-1.414 1.414l3 3a2 2 0 002.828 0z" clip-rule="evenodd"/>
+                </svg>
+                Visit Website
+            </a>
+            
+            <a href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:3.0%0AN:Levine;Evan%0AFN:Evan Levine%0AORG:Levine Real Estate%0ATITLE:Realtor%0ATEL;TYPE=WORK,VOICE:+1-455-555-0123%0AEMAIL;TYPE=WORK,INTERNET:evan@levine.realestate%0AURL:https://levine.realestate%0AEND:VCARD" download="Evan_Levine.vcf" class="action-button primary">
+                <svg class="icon" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                </svg>
+                Save Contact
+            </a>
+        </div>
+        
+        <div class="contact-form">
+            <h3 class="form-title">Get Property Updates</h3>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="firstName">First Name (optional)</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="lastName">Last Name (optional)</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email (optional)</label>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone (optional)</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone">
+                </div>
+                
+                <div class="form-group">
+                    <label>Price Range (multi-select)</label>
+                    <div class="multi-select">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="price1" name="priceRange" value="Under $1M">
+                            <label for="price1">Under $1M</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="price2" name="priceRange" value="$1M-$2M">
+                            <label for="price2">$1M-$2M</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="price3" name="priceRange" value="$2M-$3M">
+                            <label for="price3">$2M-$3M</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="price4" name="priceRange" value="$3M-$4M">
+                            <label for="price4">$3M-$3M</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="price5" name="priceRange" value="$4M-$5M">
+                            <label for="price5">$4M-$5M</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="price6" name="priceRange" value="$5M-$6M">
+                            <label for="price6">$5M-$6M</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="price7" name="priceRange" value="$6M-$7M">
+                            <label for="price7">$6M-$7M</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="price8" name="priceRange" value="$7M-$8M">
+                            <label for="price8">$7M-$8M</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="price9" name="priceRange" value="$8M+">
+                            <label for="price9">$8M+</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Property Type (multi-select)</label>
+                    <div class="multi-select">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="type1" name="propertyType" value="Condo/Townhome">
+                            <label for="type1">Condo/Townhome</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="type2" name="propertyType" value="Single Family Home">
+                            <label for="type2">Single Family Home</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="type3" name="propertyType" value="Land">
+                            <label for="type3">Land</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Desired Features (multi-select)</label>
+                    <div class="multi-select">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="feature1" name="desiredFeatures" value="Golf Community">
+                            <label for="feature1">Golf Community</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="feature2" name="desiredFeatures" value="Ski In/Ski Out">
+                            <label for="feature2">Ski In/Ski Out</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="feature3" name="desiredFeatures" value="New Build">
+                            <label for="feature3">New Build</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="feature4" name="desiredFeatures" value="Remodel Ready">
+                            <label for="feature4">Remodel Ready</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="otherFeatures">Other Features</label>
+                    <textarea id="otherFeatures" name="otherFeatures" rows="2" placeholder="Any other features you're looking for..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit (Minimal Info Required)</button>
+            </form>
+        </div>
+        
+        <div class="footer">
+            <p>💡 At minimum, please provide either a first or last name, AND either an email or phone number</p>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            
+            // Validation: First name OR last name AND email OR phone
+            if ((firstName.trim() === '' && lastName.trim() === '') || (email.trim() === '' && phone.trim() === '')) {
+                alert('Please provide either a first or last name, AND either an email or phone number.');
+                return;
+            }
+            
+            // Collect form data
+            const formData = new FormData(this);
+            const data = {};
+            for (let [key, value] of formData.entries()) {
+                if (data[key]) {
+                    if (Array.isArray(data[key])) {
+                        data[key].push(value);
+                    } else {
+                        data[key] = [data[key], value];
+                    }
+                } else {
+                    data[key] = value;
+                }
+            }
+            
+            // Log form data (replace with actual submission logic)
+            console.log('Form submitted:', data);
+            alert('Thank you! Your information has been submitted. We\'ll be in touch soon!');
+            
+            // Reset form
+            this.reset();
+        });
+    </script>
+</body>
+</html>
